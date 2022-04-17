@@ -25,7 +25,7 @@ def load_data():
         resp = get(CHART_DATA_URL)
         click.echo(click.style("Successfully fetched the data.", fg='green'))
     except:
-        click.echo(click.style("Could not fetch the data.", fg='red'))
+        click.echo(click.style("Could not fetch the data", fg='red'))
         return
 
     data_path = os.path.join("data", "dataset.json")
