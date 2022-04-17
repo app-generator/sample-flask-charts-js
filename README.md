@@ -1,4 +1,9 @@
-# Flask Charts via Flask-RestX 
+# How to plot charts in flask app using Chart.js and Flask-RESTX
+
+# Introduction
+
+This is a sample code for 
+
 
 > Features
 
