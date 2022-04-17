@@ -12,7 +12,7 @@ fetch("/api/DailySales", {
                                         const chart_data = {
                                             labels: labels,
                                             datasets: [{
-                                            label: 'Sale',
+                                            label: 'Daily Sales',
                                             backgroundColor: 'rgb(255, 99, 132)',
                                             borderColor: 'rgb(255, 99, 132)',
                                             data: monthly_sales,
@@ -40,7 +40,7 @@ fetch("/api/MonthlySales", {
                                         const chart_data = {
                                             labels: labels,
                                             datasets: [{
-                                            label: 'Sale',
+                                            label: 'Monthly Sales',
                                             backgroundColor: 'rgb(255, 99, 132)',
                                             borderColor: 'rgb(255, 99, 132)',
                                             data: monthly_sales,
