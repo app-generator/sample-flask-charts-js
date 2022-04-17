@@ -1,0 +1,38 @@
+{
+    "monthly_sales": {
+        "labels": [
+                    "January",
+                    "February",
+                    "March",
+                    "April",
+                    "May",
+                    "June"
+                ],
+        "data": [100, 120, 130, 90, 100, 120]
+    },
+    "daily_sales": {
+        "labels": [
+                    "Jun-01",
+                    "Jun-02",
+                    "Jun-03",
+                    "Jun-04",
+                    "Jun-05",
+                    "Jun-06",
+                    "Jun-07",
+                    "Jun-08",
+                    "Jun-09",
+                    "Jun-10",
+                    "Jun-11",
+                    "Jun-12",
+                    "Jun-13",
+                    "Jun-14",
+                    "Jun-15"
+                ],
+        "data": [5, 3, 7, 7, 5, 3, 5, 6, 4, 8, 2, 5, 4, 4, 8]
+    },
+    "sales_by_category":{
+        "labels": ["Chocolate & Confectionery", "Drinks", "Breakfast Cereals", "Recipe Bases and Sauces"],
+        "data": [40, 10, 10, 5]
+    }
+
+}
