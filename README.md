@@ -35,8 +35,9 @@ On Windows CMD
 ```bash
 > set FLASK_APP=app
 > flask load-data
-Successfully fetched the data.
-Saved data to data/dataset.json
+Added 13 records in MonthlyCustomers
+Added 13 records in MonthlySales
+Added 6 records in ProductSales
 > flask run
 * Serving Flask app 'app' (lazy loading)
 * Environment: production
