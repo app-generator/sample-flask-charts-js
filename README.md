@@ -126,7 +126,7 @@ $ flask run
 - `templates/index.html`
   - HOMEpage of the project
 - `js/custom.js`
-  - fetch data from teh API
+  - fetch data exposed by the `API`
 
 <br />
 
