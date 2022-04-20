@@ -6,6 +6,11 @@ This is a sample code to showcase how to plot charts using Flask as the backend 
 
 <br />
 
+- 👉 [Charts via Flask-RestX](https://flask-charts-via-restx.appseed-srv1.com/) - LIVE Demo
+- 👉 Free [support](https://appseed.us/support) via `email` and [Discord](https://discord.gg/fZC6hup).
+
+<br />
+
 > Features:
 
 - `Up-to-date dependencies`
@@ -13,7 +18,6 @@ This is a sample code to showcase how to plot charts using Flask as the backend 
 - `API`: Flask-RestX
 - `DB Tools`: Flask-SqlAlchemy, SQLite
 - `Charts`: Charts.js
-- Free [support](https://appseed.us/support) via `email` and [Discord](https://discord.gg/fZC6hup).
 
 <br />
 
