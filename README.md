@@ -1,56 +1,130 @@
-# How to plot charts in a flask app using Chart.js and Flask-RESTX
+# Flask Charts via Flask-RESTX
 
-# Introduction
+> Sample project crafted with Flask, Flask-RestX and Charts.JS - provided by `AppSeed` 
 
-This is a sample code to showcase how to  plot charts in a Flask app. On the front end we are using [Bootstrap](https://getbootstrap.com/) for styling and [Chart.js][https://www.chartjs.org/] for implementing dynamic charts. Whereas in the backend we are using [Flask](https://flask.palletsprojects.com/en/2.1.x/) and [RESTX](https://flask-restx.readthedocs.io/en/latest/). RESTX is used to provide dynamic data required for charts using REST API. Where as Flask is used for serving the front page and loading the data from an external source using a custom cli command.
+This is a sample code to showcase how to plot charts using Flask as the backend framework. Frontend uses `Bootstrap 5` for styling and Chart.js for dynamic charts. The dataset is loaded via a custom Flask CLI and the project homepage showcases three charts type: `line`, `bar` and `pie`. 
 
-# How to use it
+<br />
 
-## Set up the environment
+> Features:
+
+- `Up-to-date dependencies`
+- `Stack`: Flask
+- `API`: Flask-RestX
+- `DB Tools`: Flask-SqlAlchemy, SQLite
+- `Charts`: Charts.js
+- Free [support](https://appseed.us/support) via `email` and [Discord](https://discord.gg/fZC6hup).
+
+<br />
+
+<br />
+
+## ✨ How to use it
+
+> 👉 **Clone Sources** (this repo)
 
 ```bash
 $ git clone https://github.com/app-generator/blog-sample-flask-charts.git
 $ cd blog-sample-flask-charts
-$ pip install -r requirements.txt
 ```
 
-On Linux/Unix
+<br />
+
+> 👉 **Install Modules** using a Virtual Environment
 
 ```bash
-$ export FLASK_APP=app
-$ flask load-data
-Added 13 records in MonthlyCustomers
-Added 13 records in MonthlySales
-Added 6 records in ProductSales
-$ flask run
-* Serving Flask app 'app' (lazy loading)
-* Environment: production
-WARNING: This is a development server. Do not use it in a production deployment.
-Use a production WSGI server instead.
-* Debug mode: off
-* Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+$ virtualenv env
+$ source env/bin/activate
+$ pip3 install -r requirements.txt
 ```
-On Windows CMD
+
+Or for **Windows-based Systems**
 
 ```bash
-> set FLASK_APP=app
-> flask load-data
-Added 13 records in MonthlyCustomers
-Added 13 records in MonthlySales
-Added 6 records in ProductSales
-> flask run
-* Serving Flask app 'app' (lazy loading)
-* Environment: production
-WARNING: This is a development server. Do not use it in a production deployment.
-Use a production WSGI server instead.
-* Debug mode: off
-* Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
- ```
+$ virtualenv env
+$ .\env\Scripts\activate
+$
+$ # Install modules - SQLite Database
+$ pip3 install -r requirements.txt
+```
 
-Now go to url - http://127.0.0.1:5000 using any browser. It will load the example as below-
+<br />
 
-![Preview](static/img/preview.png)
+> 👉 **Set up the environment**
 
+```bash
+$ export FLASK_APP=app.py
+$ export FLASK_ENV=development
+```
+
+Or for **Windows-based Systems**
+
+```bash
+$ # CMD terminal
+$ set FLASK_APP=app.py
+$ set FLASK_ENV=development
+$
+$ # Powershell
+$ $env:FLASK_APP = ".\app.py"
+$ $env:FLASK_ENV = "development"
+```
+
+<br />
+
+> 👉 **Load Sample Data** from `data` directory
+
+- `monthly_customers.csv`
+- `monthly_sales.csv`
+- `product_sales.csv`
+
+```bash
+$ flask load-data 
+```
+
+<br />
+
+> 👉 **Start the APP**
+
+```bash
+$ flask run 
+```
+
+<br />
+
+## ✨ Code-base structure
+
+```bash
+< PROJECT ROOT >
+   |
+   |-- app.py            # Create and start the APP object
+   |-- api.py            # Simple API node 
+   |-- models.py         # app models
+   |
+   |-- data_loader.py    # Save the data in DB
+   |
+   |-- templates
+   |    |-- index.html   # Simple page styled with BS5 
+   |
+   |-- static
+   |    |-- js/custom.js # Code the Charts
+   |
+   |-- *******************
+```
+
+<br />
+
+> The bootstrap flow
+
+- `app.py` 
+  - bundles all resources
+  - serve the `index.html`
+- `api.py` exposes a simple API using the DB data 
+- `templates/index.html`
+  - HOMEpage of the project
+- `js/custom.js`
+  - fetch data from teh API
+
+<br />
 
 ---
 Flask Charts via Flask-RestX - provided by [AppSeed](https://appseed.us)

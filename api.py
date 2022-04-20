@@ -1,4 +1,8 @@
-import json
+# -*- encoding: utf-8 -*-
+"""
+Copyright (c) 2019 - present AppSeed.us
+"""
+
 from flask import Blueprint, request
 from flask_restx import Api, Resource, fields
 from models import  db, MonthlyCustomers, MonthlySales, ProductSales
@@ -19,16 +23,16 @@ class MonthlyCustomersAPI(Resource):
         """Monthly Customer Count
         Returns monthwise customer count
         """
+
         return MonthlyCustomers.query.all()
 
 
     @api.expect(customer_model, validate=True)
     def post(self, **kwargs):
         """Monthly Customer Count
-        Creates an entry in DB of customer count for a month
-
-        
+        Creates an entry in DB of customer count for a month        
         """
+
         data = request.get_json()
         row = MonthlyCustomers(**data)
         db.session.add(row)
