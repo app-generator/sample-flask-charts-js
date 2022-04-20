@@ -131,4 +131,4 @@ $ flask run
 <br />
 
 ---
-Flask Charts via Flask-RestX - provided by [AppSeed](https://appseed.us)
+**Flask Charts** via `Flask-RestX` - provided by [AppSeed](https://appseed.us)
