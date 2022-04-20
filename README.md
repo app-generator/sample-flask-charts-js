@@ -2,7 +2,7 @@
 
 > Sample project crafted with Flask, Flask-RestX and Charts.JS - provided by `AppSeed` 
 
-This is a sample code to showcase how to plot charts using Flask as the backend framework. Frontend uses `Bootstrap 5` for styling and Chart.js for dynamic charts. The dataset is loaded via a custom Flask CLI and the project homepage showcases three charts type: `line`, `bar` and `pie`. 
+This is a sample code to showcase how to plot charts using Flask as the backend framework. Frontend uses `Bootstrap5` for styling and `Chart.js` for dynamic charts. The dataset is loaded via a custom **Flask CLI** and the project homepage showcases three charts type: `line`, `bar` and `pie`. 
 
 <br />
 
