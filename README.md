@@ -1,4 +1,4 @@
-# Flask Charts via Flask-RESTX
+# Flask Charts via Flask-RestX
 
 > Sample project crafted with Flask, Flask-RestX and Charts.JS - provided by `AppSeed` 
 
@@ -16,6 +16,8 @@ This is a sample code to showcase how to plot charts using Flask as the backend 
 - Free [support](https://appseed.us/support) via `email` and [Discord](https://discord.gg/fZC6hup).
 
 <br />
+
+![Flask Charts via Flask-RestX and Charts.js - provided by AppSeed.us](https://user-images.githubusercontent.com/51070104/164218594-2a0a6a4d-618f-4fb8-90ee-7d4d41088466.jpg)
 
 <br />
 
