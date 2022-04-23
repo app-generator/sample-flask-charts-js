@@ -1,8 +1,6 @@
-# Flask Charts via Flask-RestX
+# [Flask Charts via Flask-RestX](https://blog.appseed.us/flask-charts-js-and-flask-restx-s92/)
 
-> Sample project crafted with Flask, Flask-RestX and Charts.JS - provided by `AppSeed` 
-
-This is a sample code to showcase how to plot charts using Flask as the backend framework. Frontend uses `Bootstrap5` for styling and `Chart.js` for dynamic charts. The dataset is loaded via a custom **Flask CLI** and the project homepage showcases three charts type: `line`, `bar` and `pie`. 
+Sample project crafted with `Flask`, `Charts.JS`, and `Flask-RestX` to showcase how to plot different charts **Pie, Line and Bar Charts**. Frontend uses `Bootstrap5` for styling and `Chart.js` for dynamic charts. The dataset is loaded via a custom **Flask CLI** and the project homepage showcases three charts type: `line`, `bar` and `pie`. 
 
 <br />
 
@@ -131,4 +129,4 @@ $ flask run
 <br />
 
 ---
-**Flask Charts** via `Flask-RestX` - provided by [AppSeed](https://appseed.us)
+[Flask Charts via Flask-RestX](https://blog.appseed.us/flask-charts-js-and-flask-restx-s92/) - provided by [AppSeed](https://appseed.us)
